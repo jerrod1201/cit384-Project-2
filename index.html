@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maximus's Giga Pet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Take care of Maximus in this little Giga Pet game.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <p class="eyebrow">A tiny friend to care for</p>
+        <h1>Maximus's Giga Pet</h1>
+        <p class="intro">Give Maximus a treat, get moving, play, or share a cuddle.</p>
+      </header>
+
+      <section class="pet-card" aria-label="Maximus's pet information">
+        <!-- Requirement: replace the starter image with a new pet image. -->
+        <div class="pet-image-container">
+          <img class="pet-image" src="images/maximus-shepherd.svg" alt="Maximus, a happy German shepherd">
+          <span class="image-hint">Hover over Maximus!</span>
+        </div>
+
+        <div class="dashboard">
+          <h2>Pet status</h2>
+          <div class="stat-row">
+            <span>Name</span>
+            <strong class="name"></strong>
+          </div>
+          <div class="stat-row">
+            <span>Weight</span>
+            <strong><span class="weight"></span> pounds</strong>
+          </div>
+          <div class="stat-row">
+            <span>Happiness</span>
+            <strong><span class="happiness"></span> tail wags / min</strong>
+          </div>
+
+          <div class="button-container" aria-label="Pet actions">
+            <button class="treat-button" type="button">Give a treat</button>
+            <button class="play-button" type="button">Play</button>
+            <button class="exercise-button" type="button">Exercise</button>
+            <!-- Requirement: add a new action button for the Cuddle behavior. -->
+            <button class="cuddle-button" type="button">Cuddle</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Requirement: display pet comments here instead of using alerts or console.log. -->
+      <section class="message-area" aria-live="polite" aria-label="Maximus's comments">
+        <h2>Maximus says...</h2>
+        <div class="pet-comments"></div>
+      </section>
+      <footer>
+        <p>Every action changes Maximus's stats. Keep an eye on weight and happiness!</p>
+      </footer>
+    </main>
+  </body>
+</html>
